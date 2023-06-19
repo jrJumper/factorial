@@ -1,0 +1,15 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Ввод числа для вычисления факториала
+num = int(input("Введите число: "))
+
+# Проверка на отрицательное число
+if num < 0:
+    print("Факториал не определен для отрицательных чисел")
+else:
+    result = factorial(num)
+    print("Факториал числа", num, "равен", result)
